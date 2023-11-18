@@ -1,0 +1,12 @@
+name: vancouver_tree_dashboard
+title: vancouver_tree_dashboard
+username: lurkstalker
+account: lurkstalker
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10564937
+bundleId: 7942004
+url: https://lurkstalker.shinyapps.io/vancouver_tree_dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
