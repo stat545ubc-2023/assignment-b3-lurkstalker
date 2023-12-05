@@ -1,48 +1,55 @@
 # Vancouver Tree Checker App
 
-**Live Demo**: Explore the Vancouver Tree Checker App [here](https://lurkstalker.shinyapps.io/vancouver_tree_dashboard/).
+Explore the Vancouver Tree Checker App in its two versions: - [Vancouver Tree Checker App (Original Version)](https://lurkstalker.shinyapps.io/vancouver_tree_dashboard/) - [Vancouver Tree Checker V2 App (Enhanced Version)](https://lurkstalker.shinyapps.io/vancouver_tree_dashboard_v2/)
 
 ## Overview
 
-The Vancouver Tree Checker App is a dynamic, user-friendly tool designed for anyone interested in exploring and analyzing data about Vancouver's urban trees. Whether you're a researcher, student, or just a curious citizen, this app provides an engaging way to visualize and understand the city's tree population.
+The Vancouver Tree Checker App provides a dynamic and interactive way to explore and analyze data on Vancouver's urban trees. Designed for researchers, students, and tree enthusiasts, this user-friendly app allows users to engage with the city's tree population through various visualization and filtering tools.
 
 ## Key Features
 
-1.  **Species Filters**: Dive into the diversity of Vancouver's trees. Filter records by species, with support for multiple selections to tailor your exploration.
+1.  **Species Filters**: Explore the diversity of tree species in Vancouver. Select one or multiple species to focus your analysis.
 
-2.  **Group By Functionality**: Discover patterns and trends by grouping tree data by street or neighborhood. View key statistics like tree count, unique species, average diameter, and more.
+2.  **Group By Functionality**: Analyze tree data by grouping based on streets or neighborhoods. Gain insights into tree count, unique species, average diameter, and other key metrics.
 
-3.  **Customizable Plots**: Create your own visual story. Choose your axes and plot types to visualize the data in a way that speaks to you.
+3.  **Diameter and Height Range Filters**: Apply filters to analyze trees by their diameter and height. The filtering logic dynamically adjusts based on the selected grouping, allowing for a more nuanced analysis.
 
-4.  **Dynamic Table Customization**: Tailor the data table to your needs. Select the columns that matter to you for a personalized view.
+4.  **Date Range Filter**: Investigate the trees based on their planting date, offering a historical perspective on urban forestry.
 
-5.  **Downloadable Data**: Take your analysis further. Download your custom-filtered dataset as a .csv file for deeper exploration or sharing.
+5.  **Customizable Plots**: Create bespoke visualizations by selecting axes and plot types, enabling a tailored data storytelling experience.
+
+6.  **Dynamic Table Customization**: Customize the data table display by selecting specific columns, ensuring a focused and relevant data view.
+
+7.  **Downloadable Data**: Export your filtered dataset as a .csv file for in-depth offline analysis or sharing.
 
 ## Dataset Source
 
-This app utilizes the `vancouver_trees` dataset from the [UBC-MDS/datateachr Vancouver R package](https://rdrr.io/github/UBC-MDS/datateachr/man/vancouver_trees.html), featuring comprehensive information on public trees in Vancouver. The dataset is updated weekly, ensuring fresh and relevant data for users.
+The app utilizes the `vancouver_trees` dataset from the [UBC-MDS/datateachr Vancouver R package](https://rdrr.io/github/UBC-MDS/datateachr/man/vancouver_trees.html). This dataset provides comprehensive, up-to-date information on public trees in Vancouver.
 
-Install the `UBC-MDS/datateachr` package with:
+To install the `UBC-MDS/datateachr` package:
 
 ``` r
 install.packages("remotes")
 remotes::install_github("UBC-MDS/datateachr")
 ```
 
-The data is publicly available and easily accessible through the R package, aligning with principles of transparency and reproducibility.
+The dataset is publicly accessible and updated weekly, promoting transparency and reproducibility.
 
 ## Getting Started
 
-Run the Vancouver Tree Checker App in your local environment:
+### Running the App Locally
 
-1.  **Clone the Repository**: Get the code on your machine by cloning this repository.
-2.  **Install Dependencies**: Set up your environment by running the following in your R console:
+1.  **Clone the Repository**: Start by cloning this repository to your local machine.
 
-``` r
-  install.packages(c("shiny", "DT", "ggplot2", "dplyr", "tidyverse", "remote"))
-  remotes::install_github("UBC-MDS/datateachr")
-```
+2.  **Install Dependencies**: Install the necessary R packages with the following commands:
 
-3.  **Launch the App**: Open app.R in RStudio and hit the "Run App" button to start exploring.
+    ``` r
+    install.packages(c("shiny", "DT", "ggplot2", "dplyr", "tidyverse", "remote"))
+    remotes::install_github("UBC-MDS/datateachr")
+    ```
 
-Dive into the world of Vancouver's urban forestry with this intuitive and powerful tool. Happy exploring!
+3.  **Launch the App**: Open `app.R` in RStudio and click "Run App" to begin exploring.
+
+4.  **App Versions**: Note that there are two versions of the app -- the original and the V2 with enhanced functionality.
+
+Happy exploring Vancouver's urban forestry with this intuitive and powerful tool!
